@@ -50,3 +50,11 @@ export const getCountAllCartItems = (data: Data[]): number => {
   }
   return count;
 };
+
+export const getPriceAllCartItems = (data: Data[]): number => {
+  let price: number = 0;
+  for (let i = 0; i < data?.length; i++) {
+    price += data[i].price * data[i].cartCount;
+  }
+  return Math.round(price * 100) / 100;
+};

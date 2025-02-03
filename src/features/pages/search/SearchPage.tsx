@@ -1,10 +1,9 @@
 import React from "react";
-import { View, ActivityIndicator } from "react-native";
+import { View } from "react-native";
 import homeStyles from "../home/styles";
 import Toolbar from "../../controlledComponents/toolbar/Toolbar";
 import Search from "../../controlledComponents/search/Search";
 import ListComponent from "../home/components/ListComponent";
-import { colors } from "../../../assets/colors";
 import useSearch from "./searchHooks/useSearch";
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
 import { RootStackParamList } from "../../../navigation/MainNavigation";
@@ -24,6 +23,7 @@ const SearchPage: React.FC<SearchScreenProps> = ({ navigation }) => {
     cartItemsCount,
     onCartPress,
   } = useSearch(navigation);
+
   return (
     <View style={homeStyles.container}>
       <Toolbar

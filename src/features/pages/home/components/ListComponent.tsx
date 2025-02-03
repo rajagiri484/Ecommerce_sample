@@ -4,7 +4,7 @@ import { Data } from "../../../../types/ProductListInterface";
 import ProductListItem from "../../../controlledComponents/ListItem.tsx/ProductListItem";
 import { colors } from "../../../../assets/colors";
 import homeStyles from "../styles";
-import { mockImages } from "../state/homedata.thunk";
+import { mockImages, offerMockImages } from "../state/homedata.thunk";
 import Carousel from "./Carousel";
 
 interface ListInterface {
@@ -12,6 +12,7 @@ interface ListInterface {
   fromSearch?: boolean;
   goToProduct: (item: Data) => void;
 }
+
 const ListComponent: React.FC<ListInterface> = ({
   data = [],
   fromSearch = false,
@@ -25,9 +26,12 @@ const ListComponent: React.FC<ListInterface> = ({
       onItemPressed={() => goToProduct(item)}
     />
   );
+
   const ItemSeparater = () => <View style={homeStyles.divider} />;
+
   const renderHeader = () =>
-    !fromSearch ? <Carousel data={mockImages} /> : null;
+    !fromSearch ? <Carousel data={offerMockImages} /> : null;
+
   return (
     <FlatList
       contentContainerStyle={homeStyles.flatlistContainer}

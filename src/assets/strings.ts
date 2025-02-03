@@ -5,4 +5,12 @@ export const strings = {
   cart: "Cart",
   cartReview: "Cart Review",
   search: "Search",
+  order_total: "Order Total Value : ",
+  taxes: "Taxes and fees : ",
+  total_amount_payable: "Total amount payable : ",
+  mastercard: "Master Card",
+  cardNo: "5565 6766 8766 0987",
+  expiry: "08/28",
+  cvv: "***",
+  name: "Raja kumar giri",
 };

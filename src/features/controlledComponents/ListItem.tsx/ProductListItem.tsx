@@ -1,6 +1,5 @@
 import React from "react";
 import { Image, Text, TouchableOpacity } from "react-native";
-import { Data } from "../../../types/ProductListInterface";
 import listStyles from "./styles";
 
 const ProductListItem = ({

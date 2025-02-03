@@ -35,7 +35,7 @@ const useProduct = (
   const onAddToCart = useCallback(
     (isAddToCart = true) => {
       // add items to cart reducer
-      const cartData = JSON.parse(JSON.stringify(cartdata)); //[...cartdata];
+      const cartData = JSON.parse(JSON.stringify(cartdata));
       const itemID = route.params.params.id;
       const dataItem = route.params.params;
       const response = checkAndInsertInCart(
@@ -54,7 +54,6 @@ const useProduct = (
   }, [cartdata]);
 
   const cartItemsCount = useMemo(() => {
-    console.log("cartdata", cartdata);
     return getCountAllCartItems(cartdata);
   }, [cartdata]);
 

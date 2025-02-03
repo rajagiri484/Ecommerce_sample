@@ -66,6 +66,11 @@ const productStyles = StyleSheet.create({
     color: colors.white,
     fontWeight: "800",
   },
+  bottomMainContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+  },
   bottomContainer: {
     flexDirection: "row",
     justifyContent: "space-between",

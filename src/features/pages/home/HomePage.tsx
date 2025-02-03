@@ -18,8 +18,6 @@ export type HomeScreenProps = NativeStackScreenProps<
 const HomePage: React.FC<HomeScreenProps> = ({ navigation }) => {
   const {
     data,
-    onChangeText,
-    searchText,
     onBackPress,
     onSearchClick,
     goToProduct,

@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  View,
-  ActivityIndicator,
-  ScrollView,
-  Text,
-  Image,
-  TouchableOpacity,
-} from "react-native";
+import { View, ScrollView, Text, Image, TouchableOpacity } from "react-native";
 import Toolbar from "../../controlledComponents/toolbar/Toolbar";
 import useProduct from "./productHooks/useProduct";
 import productStyles from "./styles";
@@ -14,7 +7,6 @@ import { NativeStackScreenProps } from "@react-navigation/native-stack";
 import { RootStackParamList } from "../../../navigation/MainNavigation";
 import Carousel from "../home/components/Carousel";
 import homeStyles from "../home/styles";
-import { colors } from "../../../assets/colors";
 import { icon } from "../../../assets/icon";
 import { strings } from "../../../assets/strings";
 import toolBarStyles from "../../controlledComponents/toolbar/styles";
@@ -77,13 +69,7 @@ const Product: React.FC<ProductScreenProps> = ({ route, navigation }) => {
       </ScrollView>
 
       {selectedCount > 0 ? (
-        <View
-          style={{
-            flexDirection: "row",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
+        <View style={productStyles.bottomMainContainer}>
           <View style={productStyles.bottomContainer}>
             <TouchableOpacity
               onPress={() => onAddToCart(false)}

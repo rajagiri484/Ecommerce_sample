@@ -4,4 +4,6 @@ export const icon = {
   star: require("./icons/star.png"),
   searchIcon: require("./icons/SearchIcon/searchIcon.png"),
   backArrowBlack: require("./icons/BackArrowBlack/backArrowBlack.png"),
+  checkboxGreen: require("./icons/CheckboxGreen/checkboxGreen.png"),
+  thumbsUp: require("./icons/ThumbsUp/thumbsUp.png"),
 };
