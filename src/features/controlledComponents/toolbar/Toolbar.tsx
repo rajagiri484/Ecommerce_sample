@@ -61,4 +61,4 @@ const Toolbar: React.FC<ToolbarInterface> = ({
   );
 };
 
-export default Toolbar;
+export default React.memo(Toolbar);
